@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(90deg, #ffffff,#00bfff);
+  color: rgb(39, 36, 61);
+}
+
+
+
+/*
+App
+*/
+.App {
+  margin: 20px auto;
+  max-width: 1000px;
+  height: 1000px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.content {
+  text-align: center;
+}
+.foundCounter {
+  font-size: 15px;
+  margin: 10px;
+  color: #ffffff;
+}
+.list {
+  padding: 30px;
+}
+
+
+
+/*
+Form
+*/
+.searchForm {
+  display: flex;
+}
+.searchForm input,
+.searchForm button {
+  padding: 15px;
+  border: none;
+  font-size: 17px;
+}
+.searchForm input {
+  width: 70%;
+  border-radius: 20px 0 0 20px;
+}
+.searchForm input:focus {
+  outline: none;
+}
+.searchForm button {
+  border-radius: 0 20px 20px 0;
+  width: 30%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.searchForm button:hover {
+  opacity: 0.8;
+}
+.searchForm button:active {
+  opacity: 0.9;
+}
+
+
+
+/*
+ItemList
+*/
+.repoItem {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(2, 2, 2, 0.678);
+  transition: 0.2s;
+}
+.repoItem:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 20px rgba(2, 2, 2, 0.747);
+}
+.repoItem_title {
+  margin: 0;
+  word-wrap: break-word;
+}
+.repoItem_subTitle {
+  color: rgb(148, 148, 148);
+}
+.repoItem_disc {
+  word-wrap: break-word;
+}
+.repoItem a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #008bb9;
+  font-weight: bold;
+  word-break: break-all;
+  transition: 0.2s;
+}
+.repoItem a:hover {
+  opacity: 0.7;
+}
