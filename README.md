@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Приложение для поиска репозиториев на GitHub
+#№# React + TypeScript + Vite
+Это приложение позволяет пользователям искать репозитории на GitHub с использованием запросов GraphQL. Загружая карточки репозиториев на основе совпадений в названиях. Интерфейс динамически загружает 10 карточек за раз, и по мере прокрутки пользователем загруженного контента приложение подгружает следующий набор из 10 репозиториев, обеспечивая бесконечную прокрутку.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Для запуска приложения следуйте приведенным ниже шагам:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - Шаг 1: Клонируйте репозиторий на свой компьютер:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+  git clone git@github.com:GeorgiusDomna/RepoSearcher.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ - Шаг 2: Перейдите в каталог скачанного репозитория и выполните команду установки зависимостей:
+```bash
+  cd <ваш-путь-к-репозиторию>
+  npm install
+```
+
+ - Шаг 3: В корне проекта создайте файл .env.local и создайте в нём переменную с вашеим авторизационным токеном:
+VITE_TOKEN=<ваш-авторизационный-токен>
+
+ - Шаг 4: Запуск приложения После успешной установки зависимостей, выполните команду для запуска приложения: npm run dev Откройте браузер и перейдите по адресу, указанному в консоли.
+
+Или воспользуйтесь готовым deploy Vercel: https://repo-searcher-opal.vercel.app/
